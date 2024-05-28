@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= post.header %></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <style>
+    footer {
+        background-color: #f8f9fa;
+        color: #333;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="public/assets/img/logo.png" alt=""> -->
+            <h1>WAVE<span>.</span></h1>
+          </a>
+    
+          
+    
+    
+        </div>
+      </header><!-- End Header -->
+      <br><br>
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <img src="<%= post.image %>" class="card-img-top" alt="<%= post.header %>">
+          <div class="card-body">
+            <h1 class="card-title"><%= post.header %></h1>
+            <h2 class="card-subtitle mb-2 text-muted"><%= post.subHeading %></h2>
+            <p class="card-text"><small class="text-muted"><%= post.date %> <%= post.time %> by <%= post.author %></small></p>
+            <p class="card-text"><%= post.content %></p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="/" class="btn btn-primary">Back to Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <footer>
+    <p>WAVE. Chamath Theekshana. 2024</p>
+</footer>
+
+</body>
+</html>
